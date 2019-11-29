@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:id="@+id/add_enemies_fragment"
+
+    >
+
+
+
+    <TextView
+        android:id="@+id/add_enemy_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add an enemy!"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/add_enemy_fragment_image"
+        android:layout_below="@id/add_enemy_fragment_title"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+    android:layout_marginBottom="15dp"
+
+        />
+    <TextView
+       android:id="@+id/add_enemy_fragment_text_view"
+        android:layout_below="@id/add_enemy_fragment_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Name: "/>
+
+    <EditText
+        android:layout_below="@id/add_enemy_fragment_image"
+        android:layout_toRightOf="@id/add_enemy_fragment_text_view"
+
+        android:id="@+id/add_enemy_fragment_edit_text"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:hint="Enemy name"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        />
+    <RatingBar
+        android:id="@+id/add_enemies_fragment_rating_bar"
+        android:layout_below="@+id/add_enemy_fragment_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="4"
+        android:layout_marginLeft="115dp"
+        android:theme="@style/RatingBar"
+        />
+
+
+    <Button
+        android:id="@+id/add_enemy_fragment_accept_button"
+        android:layout_below="@id/add_enemies_fragment_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+</RelativeLayout>
